@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Hungarian Pages -->
+  <url>
+    <loc>https://www.magichandphysio.hu/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.magichandphysio.hu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magichandphysio.hu/en/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.magichandphysio.hu/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magichandphysio.hu/en/about.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.magichandphysio.hu/services.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magichandphysio.hu/en/services.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/conditions.html</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.magichandphysio.hu/conditions.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magichandphysio.hu/en/conditions.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/patient-info.html</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.magichandphysio.hu/patient-info.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magichandphysio.hu/en/patient-info.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.magichandphysio.hu/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magichandphysio.hu/en/contact.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.magichandphysio.hu/blog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magichandphysio.hu/en/blog.html" />
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/gallery.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/privacy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/impressum.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/cookie-policy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <!-- English Pages -->
+  <url>
+    <loc>https://www.magichandphysio.hu/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.magichandphysio.hu/en/" />
+    <xhtml:link rel="alternate" hreflang="hu" href="https://www.magichandphysio.hu/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/en/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/en/services.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/en/conditions.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.magichandphysio.hu/en/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
