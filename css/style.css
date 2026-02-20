@@ -237,13 +237,16 @@ h4 {
 }
 
 .btn-outline {
-    background: transparent;
-    border-color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
     color: #fff;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .btn-outline:hover {
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.5);
     transform: translateY(-2px);
 }
 
@@ -2553,28 +2556,85 @@ h4 {
 /* ========== RESPONSIVE: TABLET (768px) ========== */
 @media (max-width: 768px) {
     .section {
-        padding: 56px 0;
+        padding: 48px 0;
+    }
+
+    /* Top Bar */
+    .top-bar {
+        padding: 8px 0;
     }
 
     .top-bar-left {
-        gap: 12px;
+        gap: 16px;
     }
 
     .top-bar-left span {
         display: none;
     }
 
-    .navbar .container {
-        height: 60px;
+    .top-bar-left a {
+        font-size: 12px;
     }
 
+    /* Navbar */
+    .navbar .container {
+        height: 56px;
+    }
+
+    .logo-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+        border-radius: 10px;
+    }
+
+    .logo strong {
+        font-size: 0.95rem;
+    }
+
+    .logo small {
+        font-size: 10px;
+    }
+
+    /* Hero */
     .hero {
-        min-height: 70vh;
-        padding: 80px 0 80px;
+        min-height: auto;
+        padding: 70px 0 90px;
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.85rem;
+        margin-bottom: 16px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 28px;
+    }
+
+    .hero-badge {
+        font-size: 13px;
+        padding: 6px 16px;
+        margin-bottom: 20px;
+    }
+
+    .hero-buttons {
+        gap: 12px;
+    }
+
+    .hero-buttons .btn {
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    /* Pain Strip */
+    .pain-strip {
+        padding: 36px 0;
     }
 
     .pain-grid {
@@ -2582,21 +2642,52 @@ h4 {
         gap: 20px;
     }
 
+    .pain-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+        border: none;
+        background: rgba(232, 133, 108, 0.2);
+    }
+
+    .pain-item h4 {
+        font-size: 13px;
+    }
+
+    .pain-bottom {
+        font-size: 0.95rem;
+    }
+
+    /* About */
     .about-preview .container {
         grid-template-columns: 1fr;
         gap: 32px;
     }
 
     .about-img-wrapper img {
-        height: 300px;
+        height: 280px;
     }
 
+    /* Grids */
     .conditions-grid {
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 12px;
     }
 
     .services-grid {
         grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .service-card {
+        padding: 24px 16px;
+    }
+
+    .service-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 24px;
+        margin-bottom: 14px;
     }
 
     .process-steps {
@@ -2614,7 +2705,7 @@ h4 {
 
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+        gap: 20px;
     }
 
     .location-grid {
@@ -2622,12 +2713,16 @@ h4 {
     }
 
     .map-wrapper iframe {
-        height: 300px;
+        height: 280px;
     }
 
     .cta-buttons {
         flex-direction: column;
         align-items: center;
+    }
+
+    .cta-banner h2 {
+        font-size: 1.5rem;
     }
 
     .blog-grid {
@@ -2636,7 +2731,7 @@ h4 {
 
     .footer-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 32px;
+        gap: 28px;
     }
 
     .service-detail-grid {
@@ -2660,6 +2755,7 @@ h4 {
         align-items: center;
     }
 
+    /* Mobile CTA bar */
     .mobile-cta-bar {
         display: flex;
     }
@@ -2671,6 +2767,12 @@ h4 {
     .cookie-banner {
         bottom: 60px;
     }
+
+    .cookie-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
 }
 
 /* ========== RESPONSIVE: MOBILE (480px) ========== */
@@ -2680,21 +2782,23 @@ h4 {
     }
 
     .section {
-        padding: 40px 0;
+        padding: 36px 0;
     }
 
+    /* Top Bar — compact single line */
     .top-bar {
         font-size: 12px;
-        padding: 8px 0;
+        padding: 6px 0;
     }
 
     .top-bar .container {
-        flex-direction: column;
-        gap: 6px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
     }
 
     .top-bar-left {
-        gap: 12px;
+        gap: 0;
         justify-content: center;
     }
 
@@ -2702,22 +2806,107 @@ h4 {
         display: none;
     }
 
+    .top-bar-left a:first-child {
+        font-size: 12px;
+    }
+
     .top-bar-right {
         display: none;
     }
 
+    /* Navbar */
+    .navbar .container {
+        height: 52px;
+    }
+
+    .logo-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+
+    .logo strong {
+        font-size: 0.9rem;
+    }
+
+    .logo small {
+        font-size: 9px;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    /* Hero */
     .hero {
         min-height: auto;
-        padding: 60px 0 60px;
+        padding: 48px 0 70px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        line-height: 1.65;
+        margin-bottom: 24px;
+    }
+
+    .hero-badge {
+        font-size: 12px;
+        padding: 5px 14px;
+        margin-bottom: 16px;
     }
 
     .hero-buttons {
         flex-direction: column;
+        gap: 10px;
     }
 
     .hero-buttons .btn {
         width: 100%;
         justify-content: center;
+        padding: 13px 20px;
+        font-size: 14px;
+    }
+
+    .hero-buttons .btn-outline {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    /* Pain Strip */
+    .pain-strip {
+        padding: 28px 0;
+    }
+
+    .pain-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+        border: none;
+    }
+
+    .pain-item h4 {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .pain-bottom {
+        font-size: 0.85rem;
+    }
+
+    /* Section headings */
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 32px;
     }
 
     .pain-grid {
@@ -2730,6 +2919,25 @@ h4 {
 
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 20px 16px;
+    }
+
+    .service-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+
+    .service-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+
+    .service-card p {
+        font-size: 13px;
     }
 
     .values-grid {
@@ -2750,6 +2958,20 @@ h4 {
 
     .footer-grid {
         grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .footer h4 {
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+        font-size: 13px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
     }
 
     .form-row {
@@ -2759,14 +2981,92 @@ h4 {
     .footer-bottom {
         flex-direction: column;
         text-align: center;
+        gap: 12px;
+        padding-top: 20px;
+    }
+
+    .footer-bottom span {
+        font-size: 12px;
     }
 
     .footer-bottom-links {
         justify-content: center;
     }
 
+    .footer-bottom-links a {
+        font-size: 12px;
+    }
+
+    /* About */
+    .about-img-wrapper img {
+        height: 220px;
+    }
+
+    .about-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about-feature {
+        font-size: 13px;
+    }
+
+    /* Gallery */
     .gallery-grid {
         grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .gallery-filter .body-map-btn {
+        font-size: 12px;
+        padding: 6px 14px;
+    }
+
+    /* Page Hero (internal pages) */
+    .page-hero {
+        padding: 30px 0;
+    }
+
+    .page-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .page-hero p {
+        font-size: 0.85rem;
+    }
+
+    /* CTA Banner */
+    .cta-banner {
+        padding: 36px 0;
+    }
+
+    .cta-banner h2 {
+        font-size: 1.3rem;
+    }
+
+    .cta-banner p {
+        font-size: 0.85rem;
+    }
+
+    .cta-buttons .btn {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    /* Blog cards */
+    .blog-card-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .blog-card-content p {
+        font-size: 13px;
+    }
+
+    .blog-meta span {
+        font-size: 11px;
     }
 
     .directions-grid {
@@ -2775,6 +3075,27 @@ h4 {
 
     .body-map-legend {
         grid-template-columns: 1fr;
+    }
+
+    /* Condition cards */
+    .condition-card {
+        padding: 16px 12px;
+    }
+
+    .condition-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .condition-card h4 {
+        font-size: 12px;
+    }
+
+    /* Mobile CTA bar */
+    .mobile-cta-bar .btn {
+        padding: 12px 8px;
+        font-size: 13px;
     }
 }
 
